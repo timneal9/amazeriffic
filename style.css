@@ -1,7 +1,6 @@
 body {
 	background: #f9e933;
 	font-family: 'Heebo', sans-serif;
-	/*font-size: 100%;*/
 }
 
 header, main, footer {
@@ -14,7 +13,7 @@ header .container, main .container, footer .container {
 }
 
 header {
-	background: white;
+	background: #F5F5F5;
 	overflow: auto;
 }
 
@@ -57,14 +56,6 @@ footer .float-right {
 	width: 285px;
 }
 
-/*h1 {
-    font-size: xx-large;
-    }
-
-h2 {
-    font-size: x-large;
-}*/
-
 h1, h2, h3, h4 {
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -86,3 +77,21 @@ img {
 	padding: 20pt;
 }
 
+.faq-list {
+	padding: 10pt;
+	background-color: #ffffe6;
+}
+
+.faq-list li {
+	font-size: larger;
+}
+
+ol li:before {
+	counter-increment: counter-q +1;
+ 	content: "Q" counter(counter-q) ": ";
+}
+
+.answer {
+	padding: 10pt;
+	color: #404040;
+}
